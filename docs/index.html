@@ -14,12 +14,25 @@
     window.$docsify = {
       name: '',
       repo: 'https://github.com/aixmi',
-      loadSidebar: true
+      loadSidebar: true,
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese',
+        loadNavbar: true
+      }
     }
     if (typeof navigator.serviceWorker !== 'undefined') {
       navigator.serviceWorker.register('sw.js')
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 </body>
 </html>
