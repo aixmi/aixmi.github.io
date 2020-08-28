@@ -8,3 +8,12 @@
 - 学到一些最佳实践
 
 本规范并不能满足所有业务或者公司的需求，建议参考此规范形成符合自身需求的文档。
+
+### 参考
+
+------
+
+[阿里巴巴java开发手册]: https://github.com/alibaba/p3c	"阿里巴巴java开发手册"
+[晓风轻技术小站]: https://xwjie.github.io
+[日志最佳实践]: https://zhuanlan.zhihu.com/p/27363484
+
