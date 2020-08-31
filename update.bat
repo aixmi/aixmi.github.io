@@ -1,1 +1,1 @@
-git add . && git commit -am 'update' && git push && pause
+git pull && git add . && git commit -am 'update' && git push && pause
