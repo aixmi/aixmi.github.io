@@ -5,15 +5,15 @@
 - api接口的Controller应标记为`@RestController`
 - api接口的Controller 都应标记`@Validated`
 - 请求接口参数会有以下几种情况
-  - 创建请求：使用`*CreateForm` 定义创建请求实体，并将对应实体打上注解`@Valid`
-  - 更新请求：使用`*EditForm` 定义更新请求实体,该`Form`实体不能通用，如果有通用需求，请抽象出父类，使用子类作为参数，并将对应实体打上注解`@Valid`
-  - 查询请求: 使用`*QueryForm`定义查询请求实体
+  - 创建请求：使用`*CreateReq` 定义创建请求实体，并将对应实体打上注解`@Valid`
+  - 更新请求：使用`*EditReq` 定义更新请求实体,该`Form`实体不能通用，如果有通用需求，请抽象出父类，使用子类作为参数，并将对应实体打上注解`@Valid`
+  - 查询请求: 使用`*QueryReq`定义查询请求实体
   - queryParam形式: 少量参数使用`@RequestParam`,如果参数较多使用`*QueryParam`形式定义实体
-  - 如果需要分页: 请求的实体参数应该继承`QueryRequest`
+  - 如果需要分页: 请求的实体参数应该继承`PageReq`
 - 请求请求响应
-  - 搜友响应的实体都已`*VO`定义
+  - 所有响应的实体都已`*Resp`定义
   - 所有的接口都应该使用`ResultBean<T>`封装
-  - 如果需要返回分页结果使用`ResultBean<T extends PageResult>`封装
+  - 如果需要返回分页结果使用`ResultBean<T extends PageResp>`封装
   - 所有的接口必须有返回内容
     - 新增: 返回新增主键ID
     - 更新: 返回true/false
@@ -29,17 +29,17 @@
 public class DemoController{
     private final IDemoService iDemoSerivce;
     @PostMapping("/add")
-    public ResultBean<Long> add(@RequestBody @Valid DemoCreateForm demoCreateForm){
-        return new ResultBean<Long>(iDemoService.add(demoCreateForm));
+    public ResultBean<Long> add(@RequestBody @Valid DemoCreateReq demoCreateReq){
+        return new ResultBean<Long>(iDemoService.add(demoCreateReq));
     }
     @PostMapping("/update")
-    public ResultBean<Boolean> update(@RequestBody @Valid DemoUpdateForm demoUpdateForm){
-        return new ResultBean<Boolean>(iDemoService.update(demoCreateForm));
+    public ResultBean<Boolean> update(@RequestBody @Valid DemoUpdateReq demoUpdateReq){
+        return new ResultBean<Boolean>(iDemoService.update(demoUpdateReq));
     }
     
     @PostMapping("/search")
-    public ResultBean<DemoQueryVO> search(@RequestBody @Valid DemoQueryForm demoQueryForm){
-        return new ResultBean<DemoQueryVO>(iDemoService.search(demoCreateForm));
+    public ResultBean<DemoQueryResp> search(@RequestBody @Valid DemoQueryForm demoQueryReq){
+        return new ResultBean<DemoQueryResp>(iDemoService.search(demoQueryReq));
     }
 }
 ```
