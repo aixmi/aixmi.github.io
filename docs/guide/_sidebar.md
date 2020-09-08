@@ -1,12 +1,14 @@
-* #### web开发规范
+* #### API开发规范
   
   * [controller规范](guide/controller_guide.md)
   * [service规范](guide/service_guide.md)
   * [日志规范](guide/log_guide.md)
   * [缓存规范](guide/cache_guide)
   * [实体规范](guide/bean_guide.md)
-
-* #### 数据库设计规范
+* #### 前端WEB开发规范
+* #### ANDROID开发规范
+* #### IOS开发规范
+* #### 数据库规范
 
   * MySql
     * 表设计
@@ -25,7 +27,7 @@
     * 分布式锁使用
     * redis集群
 
-* ### git 
+* ### git规范 
 
   * [git常用操作](guide/git_guide.md)
   * [git提交规范](guide/git_commit_guide.md)
