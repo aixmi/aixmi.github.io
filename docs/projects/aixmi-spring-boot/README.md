@@ -1,1 +1,1 @@
-aximi-archetype
+aximi-spring-boot

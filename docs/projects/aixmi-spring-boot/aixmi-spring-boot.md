@@ -1,1 +1,1 @@
-mvc-archetype
+aximi-spring-boot

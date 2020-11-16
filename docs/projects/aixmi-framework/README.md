@@ -1,1 +1,1 @@
-aximi-archetype
+aximi-framework
