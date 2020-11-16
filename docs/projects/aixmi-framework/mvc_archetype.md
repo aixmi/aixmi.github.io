@@ -1,1 +1,1 @@
-mvc-archetype
+aixmi-framework
