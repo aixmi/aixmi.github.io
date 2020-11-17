@@ -1,1 +1,7 @@
 * [编码规范](guide/)
+* [开源项目](projects/aixmi-archetypes/)
+  * [aixmi-archetypes](projects/aixmi-archetypes/)
+  * [aixmi-framework](projects/aixmi-framework/)
+  * [aixmi-spring-boot](projects/aixmi-spring-boot/)
+  * [aixmi-spring-cloud](projects/aixmi-spring-cloud/)
+  * 大法师打发
