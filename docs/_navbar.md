@@ -4,4 +4,3 @@
   * [aixmi-framework](projects/aixmi-framework/)
   * [aixmi-spring-boot](projects/aixmi-spring-boot/)
   * [aixmi-spring-cloud](projects/aixmi-spring-cloud/)
-  * 大法师打发
