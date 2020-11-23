@@ -4,3 +4,6 @@
   * [aixmi-framework](projects/aixmi-framework/)
   * [aixmi-spring-boot](projects/aixmi-spring-boot/)
   * [aixmi-spring-cloud](projects/aixmi-spring-cloud/)
+* [checklist](checklist/)
+* [集成开发环境](IDE/vscode/)
+* [软件安装与配置]
